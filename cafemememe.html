@@ -28,6 +28,7 @@ a{text-decoration: none;}
 .navibar{
     width: 100%;
     height: 80px;
+    background: white;
 
 }
 .nav{width: 708px;
@@ -100,7 +101,440 @@ width: 150px;text-align: center;}
 .navibar>.log ul li a{display: block;text-align: center;color: #ccc;font-size: 0.8em;}
 .navibar>.logobox{background: url(images/images/logobox.png)no-repeat;width: 100px;height: 100px;
 position: absolute;top: 2px;left: 2px;}
+/*로그인바 끝 */
+.bx>.bxside{
+    width: 750px;
+    height: 600px;
+    background: url(images/main_pc_fix_240425.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -560px;
+    right: -955px;
+    z-index: -1;
+}
 
+.main{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: -960px;
+    background: #f7f1f0;
+    z-index: -1;
+}
+.main>h4, .main2>h4{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 45%;
+    padding-top: 100px;
+    font-size: 1.5em;
+}
+.main>.bb, .main2>.bb{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    left: 47.5%;
+    top: 150px;
+    border-bottom: 2px solid black;
+}
+.main>div:nth-of-type(2), .main2>div:nth-of-type(2){
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    color: #666;
+    text-align: center;
+    top: 200px;
+    left: 41%;
+}
+.menu{
+    width: 980px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+.menu li{
+    float: left;
+    position: relative;
+    width: 242px;
+    height: 500px;
+   
+    top: 280px;
+}
+.menu li img{
+    transition: all 1s;
+}
+.menu li a{
+    display: block;
+    color: #000;
+    text-align: center;    
+}
+.menu li img:hover{scale: 1.2;}
+.menu li a h4{
+    font-size: 0.9em;
+}
+.menu li a p{
+    font-size: 0.8em;
+    color: #666;
+    padding-top: 20px;
+}
+/*음료 소개 끝*/
+.main2{
+    width: 100%;
+    height: 1150px;
+    background: #f5f5f5;
+    position: relative;
+    top: -960px;
+    z-index: -1;
+}
+.group{
+    width: 910px;
+    height: 600px;
+    position: relative;
+    top: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.group ul{
+    width: 850px;
+    height: 580px;
+    position: relative;
+}
+.group li{
+    float: left;
+    position: absolute;
+    transition: all 1s;
+}
+.group li:nth-child(1){
+    width: 283px;
+    height: 350px;
+    background: url(images/images/14_0.jpg)no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: all 1s;
+    top: 0;
+    left: 0;
+}
+.group li:nth-child(2){
+    width: 283px;
+    height: 200px;
+    background: url(images/images/14_3_.jpg)no-repeat;
+    background-size: cover;
+    bottom: 0;
+}
+.group li:nth-child(3){
+    width: 283px;
+    height: 200px;
+    background: url(images/images/14_1.jpg)no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 313px;
+}
+.group li:nth-child(4){
+    width: 283px;
+    height: 350px;
+    background: url(images/images/14_4.jpg)no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: all 1s;
+    bottom: 0;
+    left: 313px;
+}
+.group li:nth-child(5){
+    width: 283px;
+    height: 350px;
+    background: url(images/images/14_2.jpg)no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: all 1s;
+    top: 0;
+    left: 626px;
+}
+.group li:nth-child(6){
+    width: 283px;
+    height: 200px;
+    background: url(images/images/14_5_.jpg)no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: all 1s;
+    bottom: 0;
+    left: 626px;
+}
+.group li:nth-child(1)::before,
+.group li:nth-child(2)::before, 
+.group li:nth-child(3)::before,
+.group li:nth-child(4)::before,
+.group li:nth-child(5)::before,
+.group li:nth-child(6)::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.group li:nth-child(1):hover::before,
+.group li:nth-child(2):hover::before, 
+.group li:nth-child(3):hover::before,
+.group li:nth-child(4):hover::before,
+.group li:nth-child(5):hover::before,
+.group li:nth-child(6):hover::before
+{
+    background: rgba(44, 44, 44, 0.75);
+}
+
+.group li a{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    opacity: 0;
+    font-size: 0.9em;
+    text-align: center;
+    transition: all 1s;
+}
+.group li:nth-child(3) a{
+    left: 30%;
+}
+.group li:hover a{
+    opacity: 1;
+}
+/*가든 끝*/
+.fiximg{
+    width: 100%;
+    height:1300px ;
+    margin-top: -950px;
+    position: relative;
+    z-index: -1;
+}
+.fiximg>h4, .main2>h4{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 43%;
+    padding-top: 100px;
+    font-size: 1.5em;
+}
+.fiximg>.bb{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    left: 47.5%;
+    top: 150px;
+    border-bottom: 2px solid black;
+}
+.fiximg>div:nth-of-type(2){
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    color: #666;
+    text-align: center;
+    top: 200px;
+    left: 32%;
+}
+.fiximg .fixbox{
+    width: 100%;
+    height: 400px;
+    background: url(images/images/31_0.jpg)center fixed;
+    position: absolute;
+    top: 320px;
+}
+.fiximg .ccc{
+    width: 830px;
+    height: 500px;
+    position: absolute;
+    top: 800px;
+    margin: 0 auto;
+    left: 500px;
+}
+.fiximg .ccc div:nth-child(1){
+    width: 400px;
+    height: 300px;
+    background: url(images/images/ccc1.jpeg)no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fiximg .ccc div:nth-child(2){
+    width: 400px;
+    height: 300px;
+    background: url(images/images/ccc2.jpeg);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fiximg .ccc div:nth-child(1) p{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 320px;
+    left: 120px;
+    font-size: 0.9em;
+    text-align: center;
+}
+.fiximg .ccc div:nth-child(1) h5{
+    width: 220px;
+    height: 20px;
+    position: absolute;
+    top: 350px;
+    left: 110px;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 300;
+}
+
+.fiximg .ccc div:nth-child(2) p{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 320px;
+    right:  120px;
+    font-size: 0.9em;
+    text-align: center;
+}
+.fiximg .ccc div:nth-child(2) h5{
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 300;
+    text-align: center;
+}
+/*Eat Life 끝*/
+.trend{
+    width: 100%;
+    height: 1300px;
+    background: #f5f5f5;
+    position: relative;
+    z-index: -1;
+}
+.trend>h4{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 42%;
+    padding-top: 100px;
+    font-size: 1.5em;
+}
+.trend>.bb{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    left: 47.5%;
+    top: 150px;
+    border-bottom: 2px solid black;
+}
+.trend>div:nth-of-type(2){
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    color: #666;
+    text-align: center;
+    top: 200px;
+    left: 33%;
+}
+.trend ul{
+    width: 860px;
+    height: 860px;
+    margin: 0 auto;
+
+    position: relative;
+    top: 300px;
+}
+.trend li:nth-child(1){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_0.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.trend li:nth-child(2){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_1.png);
+    top: 0;
+    left: 220px;
+    position: absolute;
+}
+.trend li:nth-child(3){
+    width: 420px;
+    height: 420px;
+    background: url(images/images/16_4.png);
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.trend li:nth-child(4){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_2.png);
+    position: absolute;
+    top: 220px;
+    left: 0;
+}
+.trend li:nth-child(5){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_3.png);
+    position: absolute;
+    top: 220px;
+    left: 220px;
+}
+.trend li:nth-child(6){
+    width: 420px;
+    height: 420px;
+    background: url(images/images/16_5.png);
+    position: absolute;
+    top: 440px;
+    left: 0;
+}
+.trend li:nth-child(7){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_6.png);
+    position: absolute;
+    top: 440px;
+    left: 440px;
+}
+.trend li:nth-child(8){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_7.png);
+    position: absolute;
+    top: 440px;
+    right: 0px;
+}
+.trend li:nth-child(9){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_8.png);
+    position: absolute;
+    top: 660px;
+    left: 440px;
+}
+.trend li:nth-child(10){
+    width: 200px;
+    height: 200px;
+    background: url(images/images/16_9.png);
+    position: absolute;
+    top: 660px;
+    right: 0px;
+}
+/*trend 끝*/
+.stay{
+    width: 100%;
+    height: 400px;
+}
+.stay h5{
+    width: 500px;
+    height: 20px;
+    margin: 0 auto;
+}
     </style>
 </head>
 <body>
@@ -206,7 +640,74 @@ position: absolute;top: 2px;left: 2px;}
                 <li><img src="images/images/main_pc_2_240425.jpg"></li>
                 <li><img src="images/images/main_pc_3_240425.jpg"></li>
             </ul>
-           </div>
+            <div class="bxside"></div>   
+        </div>
+        <div class="main">
+            <h4>MeMeMi Now</h4>
+            <div class="bb"></div>
+            <div><p>Eat & Life<br>패뷸러스 아트테인먼트 미미미의 소식을 확인하세요</p></div>
+            <ul class="menu">
+                <li><a href="#"><img src="images/images/2024_wonder_watermelon.png">
+                    <h4>Wonder Watermelon<br>원더 워터멜론(I)</h4>
+                    <p>달콤한 수박에 상큼한 라임이 더해져<br>무더운 여름을 잊게 하는<br>청량함을 선사합니다.!</p></a></li>
+                <li><a href="#"><img src="images/images/2024_Waterful.png">
+                    <h4>Waterful<br>워터풀(I)</h4>
+                    <p>시원한 수박과 상큼한 라임향이<br>어우러진 에이드.<br>밀라노 본점 미미미의 베스트 여름 메뉴인<br>워터풀을 한국에서도 즐겨보세요!</p></a></li>
+                <li><a href="#"><img src="images/images/2024_Mango_Pool.png">
+                    <h4>Mango Pool Granita<br>망고 풀 그라니따</h4>
+                    <p>리얼 망고의 달콤함과 진한 풍미를<br>그대로 즐기고 싶은<br>당신을 위해 준비했어요</p></a></li> 
+                <li><a href="#"><img src="images/images/2024_Snow_Mango.png">
+                    <h4>Snow Mango Shake<br>스노우 망고 쉐이크</h4>
+                    <p>소프트한 밀크 아이스크림과<br>핸드메이드 망고 베이스.<br>달콤한 망고로 완성하는<br>행복한 순간을 느껴보세요</p></a></li>       
+            </ul>
+        </div>
+        <section class="main2">
+            <h4>MeMeMi Garden</h4>
+            <div class="bb"></div>
+            <div><p>문화와 라이프스타일이 공존하는<br>아트테인먼트 미미미 가든</p></div>
+            <div class="group">
+                <ul>
+                    <li><a href="#"><h5>미미미 가든</h5>&nbsp;<p><u>View Now</u></p></a></li>
+                    <li><a href="#"><h5></h5>&nbsp;<p><u>View Now</u></p></a></li>
+                    <li><a href="#"><h5>MeMeMi Garden<br>Special Offers<br>가든에서 제공하는<br>특별한 혜택을 만나보세요</h5>&nbsp;<p><u>View Now</u></p></a></li>
+                    <li><a href="#"><h5></h5>&nbsp;<p><u>View Now</u></p></a></li>
+                    <li><a href="#"><h5>Party & Culture<br>일상의 깊이를 더하는<br>하이앤드 라이프스타일을<br>경험하세요</h5>&nbsp;<p><u>View Now</u></p></a></li>
+                    <li><a href="#"><h5></h5>&nbsp;<p><u>View Now</u></p></a></li>
+                </ul>
+            </div>
+        </section>
+        <aside class="fiximg">
+            <h4>Eat & Life MeMeMi</h4>
+            <div class="bb"></div>
+            <div><p>미미미는 이탈리아 밀라노 비아 브레라 23에서 탄생한 글로벌 아트테인먼트입니다.<br>가든, 키친, 카페 3가지 타입으로 패션과 라이프 스타일을 접목한 새로운 공간을 선보이고 있습니다.</p></div>
+            <div class="fixbox"></div>
+            <div class="ccc">
+                <div><p>미미미 가든 카페 청담 </p><h5>서울특별시 강남구 도산대로 417 1F</h5></div>
+                <div><p>미미미 가든 BAR&RESTAURANT </p><h5>서울특별시 강남구 도산대로 417 B1-B2F</h5></div>
+            </div>
+        </aside>
+        <div class="trend">
+            <h4>MeMeMi Garden TREND</h4>
+            <div class="bb"></div>
+            <div><p>미미미 가든의 스페셜한 스토리<br>지금 확인해보세요</p></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="stay">
+            <h5>Stay connected!</h5>&nbsp;<h5>Follow us on instagram</h5>
+            <p>@mememi.official</p>
+        </div>
+           
 
 
 
