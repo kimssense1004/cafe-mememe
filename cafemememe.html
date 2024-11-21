@@ -13,6 +13,9 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="js/jquery.bxslider.js"></script>
+<!--https://fontawesome.com/v5/search-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         @font-face{font-family:"FuturaStd-Book";src:url(font/FuturaStd-Book.woff);}
 
@@ -29,6 +32,7 @@ a{text-decoration: none;}
     width: 100%;
     height: 80px;
     background: white;
+    z-index: 1;
 
 }
 .nav{width: 708px;
@@ -103,13 +107,13 @@ width: 150px;text-align: center;}
 position: absolute;top: 2px;left: 2px;}
 /*로그인바 끝 */
 .bx>.bxside{
-    width: 750px;
+    width: 990px;
     height: 600px;
     background: url(images/main_pc_fix_240425.jpg)no-repeat;
     background-size: cover;
     position: relative;
     top: -560px;
-    right: -955px;
+    right: -940px;
     z-index: -1;
 }
 
@@ -119,7 +123,7 @@ position: absolute;top: 2px;left: 2px;}
     position: relative;
     top: -960px;
     background: #f7f1f0;
-    z-index: -1;
+    z-index: 0;
 }
 .main>h4, .main2>h4{
     position: absolute;
@@ -157,7 +161,7 @@ position: absolute;top: 2px;left: 2px;}
     position: relative;
     width: 242px;
     height: 500px;
-   
+   transition: all 1s;
     top: 280px;
 }
 .menu li img{
@@ -168,7 +172,10 @@ position: absolute;top: 2px;left: 2px;}
     color: #000;
     text-align: center;    
 }
-.menu li img:hover{scale: 1.2;}
+.menu li img:hover{
+    scale: 1.2;
+    z-index: 1;
+   }
 .menu li a h4{
     font-size: 0.9em;
 }
@@ -532,9 +539,102 @@ position: absolute;top: 2px;left: 2px;}
 }
 .stay h5{
     width: 500px;
-    height: 20px;
+    height: 5px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.stay p{
+    width: 500px;
+    height: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 0.7em;
+}/*하단 stay 문장 끝*/
+footer{
+    width: 100%;
+    height: 400px;
+    margin-top: -200px;
+    position: relative;
+    background: url(images/common/hd_visual.png);
+}
+footer::before{
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 13, 13, 0.85);
+    position: relative;
+}
+footer #wrap{
+    width: 900px;
+    height: 00px;
+    position: relative;
+    top: -400px;
     margin: 0 auto;
 }
+footer div img{
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+footer #wrap p{
+    color: white;
+    position: absolute;
+    top: 150px;
+    font-size: 0.8em;
+    left: 46px;
+}
+footer #wrap p span{
+    background: #ccc;
+    width: 100px;
+    text-align: center;
+}
+footer #wrap .help{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 38px;
+    right: 180px;
+}
+footer #wrap .help li a,
+footer #wrap .Mememi li a{
+    display: block;
+    color: white;
+    padding-top: 20px;
+    font-size: 0.8em;
+}
+footer #wrap .Mememi{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 38px;
+    right: -20px;
+}
+footer .icon{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 250px;
+    left: 18px;
+}
+footer .icon li{
+    float: left;
+    padding-left: 30px;
+}
+footer .icon li a{
+    display: block;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -707,6 +807,35 @@ position: absolute;top: 2px;left: 2px;}
             <h5>Stay connected!</h5>&nbsp;<h5>Follow us on instagram</h5>
             <p>@mememi.official</p>
         </div>
+        <footer>
+            <div id="wrap">
+            <div><img src="images/common/n_logo2.png" width="200px"></div>
+            <p>(주)미미미 | 대표이사:양지해<br>
+                06014 서울특별시 강남구 도산대로 417 (청담동) I Tel : 02-518-8765<br>
+                Email : hcpark@metrocity.co.kr I 사업자등록번호 : 5198700640 &nbsp; <span>사업자정보확인</span><br>
+                통신판매업신고 : 2017-서울강남-03277 I 개인정보관리책임자 : 박한철
+            </p>
+            <ul class="help">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <ul class="Mememi">
+                <li><a href="#">Mememi</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">매장소개</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="icon">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+
+            </ul>
+        </div>
+
+        </footer>
            
 
 
@@ -723,7 +852,7 @@ position: absolute;top: 2px;left: 2px;}
             moveSlides: 1, //슬라이드 이동시 갯수 
             slideMargin: 40, //슬라이드와 슬라이드 사이의 간격
             infiniteLoop: true, //반복 
-            slideWidth: 990,//슬라이드 너비
+            slideWidth: 940,//슬라이드 너비
             sliderheight:650,
             minSlides: 1, //슬라이드 최소 노출 갯수
             maxSlides: 1, //슬라이드 최대 노출 갯수 
